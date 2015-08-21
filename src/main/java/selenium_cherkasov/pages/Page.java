@@ -1,8 +1,10 @@
 package selenium_cherkasov.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 /*
  * Abstract class representation of a Page in the UI. Page object pattern
@@ -46,4 +48,6 @@ public abstract class Page {
       return false;
     }
   }
+  
+ 		
 }
