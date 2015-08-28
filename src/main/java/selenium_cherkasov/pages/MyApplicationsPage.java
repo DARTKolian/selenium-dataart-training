@@ -26,6 +26,9 @@ public class MyApplicationsPage extends AnyPage {
 	@FindBy(xpath = "//div[@class='name']")
 	private WebElement applicationTitle;
 	
+	@FindBy(xpath = "//a[contains(text(),'Details')]")
+	private WebElement detailsLinkText;
+	
 	public NewApplicationPage clickAddNewApplicationLink() {
 		addNewApplicationLink.click();
 		return pages.newApplicationPage;
@@ -34,5 +37,10 @@ public class MyApplicationsPage extends AnyPage {
 	public WebElement getApplicationTitle() {
 	return pages.myApplicationsPage.applicationTitle;
     }
+	
+	public ApplicationPage clickDetailsLinkText() {
+		detailsLinkText.click();
+		return pages.applicationPage;
+	}
 	
 }

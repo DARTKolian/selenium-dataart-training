@@ -15,5 +15,6 @@ void gotoNewApplicationsPage();
 boolean NewApplicationsPageIsOpen();
 boolean MyApplicationsPageIsOpen();
 void gotoEditApplicationsPage();
+void openPreviousPage();
 
 }

@@ -20,7 +20,7 @@ public class AjaxTest extends selenium_cherkasov.pages.TestBase {
 		app.getNavigationHelper().gotoAjaxTestPage();
 		app.getAjaxHelper().SumNOTOK();
 		app.getAjaxHelper().ensureIncorrectResult();
-		
+		app.getNavigationHelper().openPreviousPage();		
 	}
 
 	@Test
@@ -29,5 +29,6 @@ public class AjaxTest extends selenium_cherkasov.pages.TestBase {
 		app.getNavigationHelper().gotoAjaxTestPage();
 		app.getAjaxHelper().SumOK();
 		app.getAjaxHelper().ensureCorrectResult();
+		app.getNavigationHelper().openPreviousPage();
 	}
 }

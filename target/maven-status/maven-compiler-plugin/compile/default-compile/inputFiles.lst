@@ -2,6 +2,7 @@ C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_c
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\DriverBasedHelper.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\NavigationHelper1.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic\NavigationHelper.java
+C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\JsHelper1.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\NewApplicationPage.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\AjaxTestPage.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic\UserHelper.java
@@ -12,11 +13,12 @@ C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_c
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\EditAccountPage.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic\ApplicationHelper.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\util\Browser.java
-C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\UserHelper1.java
-C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\DisplayedElementLocatorFactory.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\MyApplicationsPage.java
-C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\ApplicationManager1.java
+C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\DisplayedElementLocatorFactory.java
+C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\UserHelper1.java
+C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic\AjaxHelper.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\JsTestPage.java
+C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\ApplicationManager1.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\model\User.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\util\PropertyLoader.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\PageManager.java
@@ -25,7 +27,9 @@ C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_c
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\AnyPage.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\ApplicationHelper1.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\ApplicationPage.java
+C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic\JsHelper.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\DisplayedElementLocator.java
+C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\applogic1\AjaxHelper1.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\model\Application.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\LoginPage.java
 C:\Dataart_cherkasov_selenium\dataart_cherkasov_project\src\main\java\selenium_cherkasov\pages\Page.java

@@ -37,13 +37,13 @@ public void addnewUserLogoutLoginOK() {
 	Assert.assertTrue(app.getUserHelper().isLoggedInAs(USER));
     }
 
-/**@Test
-public void addnewUserDeveloperUploadOK() {
-	
-	app.getUserHelper().createUser(DEVELOPER);
-	app.getNavigationHelper().gotoNewApplicationsPage();
-	Assert.assertTrue(app.getNavigationHelper().NewApplicationsPageIsOpen());
-	}**/
+//@Test
+//public void addnewUserDeveloperUploadOK() {
+//	
+//	app.getUserHelper().createUser(DEVELOPER);
+//	app.getNavigationHelper().gotoNewApplicationsPage();
+//	Assert.assertTrue(app.getNavigationHelper().NewApplicationsPageIsOpen());
+//	}
 	
 @Test
 public void addnewUserUploadNOTOK() {

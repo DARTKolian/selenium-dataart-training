@@ -73,6 +73,8 @@ public void clickMyApplicationsLink() {
   .clickMyApplicationsPage();
 }
 
+
+
 @Override
 public boolean isElementPresent(By locator) {
 	try {

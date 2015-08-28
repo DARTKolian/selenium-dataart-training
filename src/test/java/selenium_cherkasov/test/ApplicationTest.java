@@ -16,20 +16,23 @@ public class ApplicationTest extends selenium_cherkasov.pages.TestBase {
 	    }
 	  }
 	
-	/**@Test
+	@Test
+	public void downloadJSON() {
+		app.getUserHelper().loginAs(ADMIN);
+		app.getNavigationHelper().gotoInternalPage();
+		app.getApplicationHelper().downloadAppJson();
+	}
+	
+	
+	@Test
 	public void createNewApplicationWithoutImage() {
 		 app.getUserHelper().loginAs(ADMIN);
 		 app.getNavigationHelper().gotoNewApplicationsPage();
-		 app.getApplicationHelper().create(APPLICATIONWITHOUTIMAGE);
-		 //Assert.assertTrue(app.getApplicationHelper().isApplicationExist(APPLICATIONWITHOUTIMAGE));
-	 }**/
-	
-	@Test
-	public void createNewApplicationWithImage() {
-		 app.getUserHelper().loginAs(ADMIN);
-		 app.getNavigationHelper().gotoNewApplicationsPage();
-		 app.getApplicationHelper().create(APPLICATIONWITHIMAGE);
-		 //Assert.assertTrue(app.getApplicationHelper().isApplicationExist(APPLICATIONWITHOUTIMAGE));
+		 Application application = new Application()
+		 .setTitle("trololo")
+		 .setDescription("popopo");
+		 app.getApplicationHelper().create(application);
+		 Assert.assertTrue(app.getApplicationHelper().isApplicationExist(application));
 	 }
 	
 	/**@Test
@@ -37,16 +40,36 @@ public class ApplicationTest extends selenium_cherkasov.pages.TestBase {
 		app.getUserHelper().loginAs(ADMIN);
 		app.getNavigationHelper().gotoNewApplicationsPage();
 		app.getApplicationHelper().create(APPLICATIONWITHOUTIMAGE);
-		//app.getNavigationHelper().gotoEditApplicationsPage();
-		//app.getApplicationHelper().Edit(application);
+		app.getApplicationHelper().gotoApplicationDetails(APPLICATIONWITHOUTIMAGE);
+		app.getApplicationHelper().Edit(APPLICATIONWITHOUTIMAGE);	
 	}**/
+		
+	@Test
+	public void createNewApplicationWithImage() {
+		 app.getUserHelper().loginAs(ADMIN);
+		 app.getNavigationHelper().gotoNewApplicationsPage();
+		 app.getApplicationHelper().createWithImage(APPLICATIONWITHIMAGE);
+		 Assert.assertTrue(app.getApplicationHelper().isApplicationExist(APPLICATIONWITHIMAGE));
+	}
+	
+		
+	@Test
+	public void downloadApplicationUntilPopular() {
+		app.getUserHelper().loginAs(ADMIN);
+		app.getNavigationHelper().gotoNewApplicationsPage();
+		app.getApplicationHelper().create(APPLICATIONWITHOUTIMAGE);
+		app.getApplicationHelper().gotoApplicationDetails(APPLICATIONWITHOUTIMAGE);
+		app.getApplicationHelper().downloadApplicationManyTimes(APPLICATIONWITHOUTIMAGE);
+	}
 
-	/**@Test
+	@Test
 	public void deleteApplication() {
 		 app.getUserHelper().loginAs(ADMIN);
-		 //app.getApplicationHelper().create(APPLICATIONWITHOUTIMAGE);
-		 app.getApplicationHelper().delete(APPLICATIONWITHOUTIMAGE);
+		 app.getNavigationHelper().gotoNewApplicationsPage();
+		 app.getApplicationHelper().create(APPLICATIONWITHOUTIMAGE);
+		 app.getApplicationHelper().gotoApplicationDetails(APPLICATIONWITHOUTIMAGE);
+		 app.getApplicationHelper().delete();
+		 app.getNavigationHelper().gotoMyApplicationsPage();
 		 Assert.assertFalse(app.getApplicationHelper().isApplicationExist(APPLICATIONWITHOUTIMAGE));
-	 
-	}**/
+	}
 }

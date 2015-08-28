@@ -40,7 +40,8 @@ public class EditApplicationPage extends AnyPage {
 	
 	public EditApplicationPage clickUpdateButton() {
 		updateButton.click();
-		wait.until(alertIsPresent()).accept();
+		//wait.until(alertIsPresent()).accept();
+		wait.until(presenceOfElementLocated(By.xpath("//p[contains(text(),'Application edited')]")));
 		return this;
 	}	
 }

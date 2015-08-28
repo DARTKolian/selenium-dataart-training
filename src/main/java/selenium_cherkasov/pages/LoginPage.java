@@ -13,9 +13,9 @@ public class LoginPage extends AnyPage {
 	}
 	
   public LoginPage ensurePageLoaded() {
-  super.ensurePageLoaded();
-  wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'Register as a new user')]")));
-  return this;
+	  super.ensurePageLoaded();
+	  wait.until(presenceOfElementLocated(By.xpath("//a[contains(text(),'Register as a new user')]")));
+	  return this;
   }
 
   @FindBy(name = "j_username")

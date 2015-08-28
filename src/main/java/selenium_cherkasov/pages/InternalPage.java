@@ -2,11 +2,14 @@ package selenium_cherkasov.pages;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 
 import selenium_cherkasov.model.Application;
 
@@ -44,8 +47,8 @@ public class InternalPage extends AnyPage {
   @FindBy(xpath = "//a[contains(text(),'Details')]")
   private WebElement anyApplicationDetailsLink;
   
-  /**@FindBy(xpath = "//div[@class='name']")
-  private WebElement applicationTitle;**/
+  @FindBys(@FindBy(xpath = "//div[@class='name']"))
+  private List <WebElement> applicationTitles;
   
    
   public AjaxTestPage clickAjaxTestPage() {
@@ -83,9 +86,10 @@ public class InternalPage extends AnyPage {
   return pages.applicationPage;
   }
   
- /** public WebElement getApplicationTitle() {
-	  return pages.internalPage.applicationTitle;
-  }**/
+  public InternalPage getListOfApplicationTitles() {
+	  
+	  return this;
+  }
   
   public boolean isElementPresent(By locator) {
 	    try {
@@ -95,5 +99,7 @@ public class InternalPage extends AnyPage {
 	    	return false;
 	    }  
   }
+
+
 
 }

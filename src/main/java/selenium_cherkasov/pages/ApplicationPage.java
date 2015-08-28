@@ -41,6 +41,7 @@ public class ApplicationPage extends AnyPage {
 		Assert.assertEquals("Do you want to delete this application?", driver.switchTo().alert().getText());
 		Alert alert = driver.switchTo().alert();
 		alert.accept();
+		wait.until(presenceOfElementLocated(By.xpath("//p[contains(text(),'Deleted')]")));
 		return this;
 		}
 	
@@ -49,4 +50,7 @@ public class ApplicationPage extends AnyPage {
 		return pages.editAccountPage;
 		}
 	
+	public void clickDownloadButton() {
+	downloadButton.click();
+	}
 }

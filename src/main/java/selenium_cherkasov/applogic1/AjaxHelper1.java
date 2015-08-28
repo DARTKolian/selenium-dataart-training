@@ -41,4 +41,6 @@ public class AjaxHelper1 extends DriverBasedHelper implements AjaxHelper {
 		String message = driver.findElement(By.id("result")).getText();
 		Assert.assertNotEquals(message, "Result is: Incorrect data");
 		}
+	
+	
 }

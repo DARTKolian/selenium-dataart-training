@@ -46,28 +46,27 @@ public class JsTestPage extends AnyPage {
 		return this;
 	}
 	
-	public String getLeftFindMeField() {
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		//String left = (String) jse.executeScript("return $('.flash').position().left");
-		Double d = (Double) jse.executeScript("return $('.flash').position().left");
-		System.out.println("double = " + d);
-		String leftCoord = Integer.toString(d.intValue());
-		System.out.println("coord = " + leftCoord);
-		return leftCoord;
-		}
-	
+		
+		
 	public String getTopFindMeField() {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		//String left = (String) jse.executeScript("return $('.flash').position().left");
 		Double d = (Double) jse.executeScript("return $('.flash').position().top");
 		//System.out.println("double = " + d);
-		String topCoord = Integer.toString(d.intValue());
-		//System.out.println("coord = " + topCoord);
-		return topCoord;
-		}
+		long topField = Math.round(d);
+		//System.out.println("coord = " + topField);
+		return Long.toString(topField);
+	}
 	
+	public String getLeftFindMeField() {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		Double d = (Double) jse.executeScript("return $('.flash').position().left");
+		//System.out.println("double = " + d);
+		long leftField = Math.round(d);
+		//System.out.println("coord = " + leftField);
+		return Long.toString(leftField);
+	}
 	
-	
+		
 	
 	public JsTestPage clickProcessButton() {
 		processButton.click();

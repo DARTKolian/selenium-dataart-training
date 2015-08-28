@@ -3,14 +3,32 @@
 <suite verbose="0" name="Failed suite [Tests]">
   <test name="Test1(failed)">
     <classes>
+      <class name="selenium_cherkasov.test.RegistrationTest">
+        <methods>
+          <include name="mayBeLogout"/>
+          <include name="stop"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- selenium_cherkasov.test.RegistrationTest -->
+      <class name="selenium_cherkasov.test.ApplicationTest">
+        <methods>
+          <include name="mayBeLogout"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- selenium_cherkasov.test.ApplicationTest -->
       <class name="selenium_cherkasov.test.LoginTest">
         <methods>
-          <include name="stop"/>
-          <include name="testLoginFailed"/>
           <include name="mayBeLogout"/>
           <include name="init"/>
         </methods>
       </class> <!-- selenium_cherkasov.test.LoginTest -->
+      <class name="selenium_cherkasov.test.AjaxTest">
+        <methods>
+          <include name="ajaxSumOK"/>
+          <include name="init"/>
+          <include name="mayBeLogout"/>
+        </methods>
+      </class> <!-- selenium_cherkasov.test.AjaxTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Tests] -->

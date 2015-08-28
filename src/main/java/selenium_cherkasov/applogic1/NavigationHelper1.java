@@ -24,6 +24,7 @@ public class NavigationHelper1 extends DriverBasedHelper implements NavigationHe
     driver.get(baseUrl + url);
   }
   
+  
   @Override
   public void gotoAjaxTestPage() {
 	  driver.findElement(By.xpath("//a[contains(text(),'Ajax test page')]"))
@@ -50,10 +51,12 @@ public class NavigationHelper1 extends DriverBasedHelper implements NavigationHe
   
   @Override
   public void gotoNewApplicationsPage() {
-	  driver.findElement(By.xpath("//a[contains(@href, '/my')]"))
+	  driver.findElement(By.xpath("//a[contains(text(),'My applications')]"))
       .click();
+	  pages.myApplicationsPage.ensurePageLoaded();
 	  driver.findElement(By.xpath("//a[contains(text(),'Click to add new application')]"))
 	  .click();
+	  pages.newApplicationPage.ensurePageLoaded();
   }
   
   @Override
@@ -81,4 +84,10 @@ public class NavigationHelper1 extends DriverBasedHelper implements NavigationHe
   public boolean MyApplicationsPageIsOpen() {
     return pages.myApplicationsPage.waitPageLoaded();
   }
+  
+  @Override
+  public void openPreviousPage() {
+	  driver.navigate().back();
+  }
+  
  }

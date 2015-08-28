@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="selenium_cherkasov.test.ApplicationTest">
+      <class name="selenium_cherkasov.test.AjaxTest">
         <methods>
-          <include name="createNewApplicationWithoutImage"/>
-          <include name="stop"/>
-          <include name="mayBeLogout"/>
+          <include name="ajaxSumOK"/>
           <include name="init"/>
+          <include name="ajaxSumNOTOK"/>
         </methods>
-      </class> <!-- selenium_cherkasov.test.ApplicationTest -->
+      </class> <!-- selenium_cherkasov.test.AjaxTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
